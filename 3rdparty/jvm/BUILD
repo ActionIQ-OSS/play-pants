@@ -1,20 +1,22 @@
+PLAY_REV='2.7.4'
+TWIRL_REV='1.4.1'
+
 jar_library(name = 'twirl-compiler',
             jars = [
-              scala_jar('com.typesafe.play', 'twirl-compiler', '1.1.1')
+              scala_jar('com.typesafe.play', 'twirl-compiler', TWIRL_REV)
             ])
 
 jar_library(name = 'routes-compiler',
             jars = [
-              scala_jar('com.typesafe.play', 'routes-compiler', '2.5.4')
+              scala_jar('com.typesafe.play', 'routes-compiler', PLAY_REV)
             ])
 
 jar_library(name = 'play',
             jars = [
-                scala_jar('com.typesafe.play', 'play', '2.5.4')
+                scala_jar('com.typesafe.play', 'play', PLAY_REV)
             ])
 
 jar_library(name = 'scopt',
             jars = [
               scala_jar('com.github.scopt', 'scopt', '3.4.0')
             ])
-
